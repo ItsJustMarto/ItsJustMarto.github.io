@@ -106,7 +106,7 @@ button:hover{
 }
 #spin:after {
   content:"";
-  animation: spin 2s linear infinite;
+  animation: spin 10s linear infinite;
 }
 
 .fade-in {
@@ -126,14 +126,14 @@ button:hover{
 }
 
 @keyframes spin {
-  0% { content:"ipsum"; }
-  10% { content:"dolor"; }
-  20% { content:"sit"; }
-  30% { content:"amet"; }
-  40% { content:"consectetur"; }
-  50% { content: "adipisicing"; }
-  60% { content: "elit"; }
-  70% { content: "Hic"; }
-  80% { content: "atque"; }
-  90% { content: "fuga"; }
+  0% { content:"Hello"; }
+  10% { content:"Bonjour"; }
+  20% { content:"Hola"; }
+  30% { content:"Buon giorno"; }
+  40% { content:"Wassup"; }
+  50% { content: "Howdy"; }
+  60% { content: "Ahoy"; }
+  70% { content: "G'Day"; }
+  80% { content: "Aloha"; }
+  90% { content: "Sup"; }
 }
