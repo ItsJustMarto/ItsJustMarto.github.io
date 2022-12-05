@@ -1,5 +1,5 @@
 h1 {
-    color: #EDEDED;
+    color: #E3DCD2;
     font-family: consolas;
     font-size: 72px;
     text-shadow: 7px 7px 7px #202020;
@@ -93,7 +93,7 @@ button:hover{
 
 #clock {
   font-family: consolas, sans-serif;
-  color: #EDEDED;
+  color: #E3DCD2;
   font-size: 56px;
   text-align: center;
   padding-top: 40px;
