@@ -30,7 +30,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    position: sticky;
+    position: fixed;
     top: 2px;
 }
 
