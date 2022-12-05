@@ -1,0 +1,117 @@
+h1 {
+    color: #EDEDED;
+    font-family: consolas;
+    font-size: 72px;
+    text-shadow: 7px 7px 7px #202020;
+    }
+
+p {
+    font-size: 25px;
+    font-family: consolas;
+}
+
+body {
+    padding-left: auto;
+    padding-right: auto;
+    font-family: consolas;
+    text-align: center;
+    background-color: #313131;
+    color: #525252;
+    }
+
+a {
+    text-decoration: none;
+    font-family: consolas;
+    color: DA0037;
+    }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+    top: 2px;
+}
+
+li {
+    float: left;
+    }
+
+li a{
+    display: block;
+    color: #414141;
+    text-align: center;
+    padding: 5px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    }
+
+li a:hover {
+    color: #CA3E47;
+    transform: scale(1.1);
+}
+
+a { text-decoration: none; color:red; }
+a:visited { text-decoration: none; }
+a:focus { text-decoration: none; }
+
+.active {
+  color: #CA3E47;
+}
+
+.art {
+    box-shadow: black;
+    border-radius: 8px;
+    box-shadow:5px 5px 5px #202020;
+}
+
+.social {
+    padding: 10px;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+button {
+    background-color: #CA3E47;
+    color: #414141;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #202020;
+    font-family: consolas;
+    text-align: center;
+    width: 125px;
+    height: 75px;
+    font-size: 21px;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+#clock {
+  font-family: consolas, sans-serif;
+  color: #EDEDED;
+  font-size: 56px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-shadow:5px 5px 5px #202020;
+}
+
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
