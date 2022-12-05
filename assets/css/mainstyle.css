@@ -102,11 +102,11 @@ button:hover{
 }
 
 #spin {
+  color: yellow;
 }
-
 #spin:after {
   content:"";
-  animation: spin 50s linear infinite;
+  animation: spin 60s linear infinite;
 }
 
 .fade-in {
