@@ -106,7 +106,7 @@ button:hover{
 }
 #spin:after {
   content:"";
-  animation: spin 60s linear infinite;
+  animation: spin 600s linear infinite;
 }
 
 .fade-in {
