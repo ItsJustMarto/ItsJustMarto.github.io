@@ -106,7 +106,7 @@ button:hover{
 }
 #spin:after {
   content:"";
-  animation: spin 60s linear infinite;
+  animation: spin 30s linear infinite;
 }
 
 .fade-in {
@@ -128,14 +128,5 @@ button:hover{
 
 @keyframes spin {
   0% { content:"Hello"; }
-  10% { content:"Bonjour"; }
-  20% { content:"Hola"; }
-  30% { content:"Buon giorno"; }
-  40% { content:"Wassup"; }
-  50% { content: "Howdy"; }
-  60% { content: "Ahoy"; }
-  70% { content: "G'Day"; }
-  80% { content: "Aloha"; }
-  90% { content: "Sup"; }
   100% { content: "Hey"; }
 }
