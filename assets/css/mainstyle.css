@@ -104,6 +104,7 @@ button:hover{
 #spin {
   color: yellow;
 }
+
 #spin:after {
   content:"";
   animation: spin 30s linear infinite;
@@ -128,5 +129,8 @@ button:hover{
 
 @keyframes spin {
   0% { content:"Hello"; }
+  25% { content: "Sup";}
+  50% { content: "Hola";}
+  75% { content: "Bonjour";}
   100% { content: "Hey"; }
 }
