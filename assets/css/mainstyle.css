@@ -128,13 +128,13 @@ button:hover{
 }
 
 @keyframes spin {
-  0% { content:"Hello";  opacity: 100;}
+  0% { opacity: 100; content:"Hello";}
   15% { opacity: 0;}
-  25% { content: "Sup"; opacity: 100;}
+  25% { opacity: 100; content: "Sup";}
   35% { opacity: 0;}
-  50% { content: "Hola"; opacity: 100;}
+  50% { opacity: 100; content: "Hola";}
   65% { opacity: 0;}
-  75% { content: "Bonjour"; opacity: 100;}
+  75% { opacity: 100; content: "Bonjour";}
   85% { opacity: 0;}
-  100% { content: "Hey";  opacity: 100;}
+  100% { opacity: 100; content: "Hey";}
 }
