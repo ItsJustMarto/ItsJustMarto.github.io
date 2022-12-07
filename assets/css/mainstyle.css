@@ -5,6 +5,12 @@ h1 {
     text-shadow: 7px 7px 7px #202020;
     }
 
+h3 {
+    color: #E3DCD2;
+    font-family: consolas;
+    font-size: 21px;
+    text-shadow: 7px 7px 7px #202020;
+    }
 p {
     font-size: 25px;
     font-family: consolas;
