@@ -11,6 +11,20 @@
 	<meta name="Author" conent="Toby Martin">
 	<link rel="stylesheet" type="text/css" href="assets/css/mainstyle.css">
 	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+
+	<script type="text/javascript">
+  writeRandomQuote = function () {
+    var quotes = new Array();
+    quotes[0] = "Action is the real measure of intelligence.";
+    quotes[1] = "Baseball has the great advantage over cricket of being sooner ended.";
+    quotes[2] = "Every goal, every action, every thought, every feeling one experiences, whether it be consciously or unconsciously known, is an attempt to increase one's level of peace of mind.";
+    quotes[3] = "A good head and a good heart are always a formidable combination.";
+    var rand = Math.floor(Math.random()*quotes.length);
+    document.write(quotes[rand]);
+  }
+  writeRandomQuote();
+</script>
+
 </head>
 
 <body>
@@ -38,6 +52,8 @@
 		<a class="social" href="https://discord.gg/3MUV5vU9Xx"><img src="assets/media/discord.png" height="40" width="40"></a>
 		<a class="social" href="https://www.instagram.com/itsjustmarto/"><img src="assets/media/instagram.png" height="40" width="40"></a>
 		<a class="social" href="https://twitter.com/itsjustmarto"><img src="assets/media/twitter.png" height="40" width="40"></a>
+
+		<script type="text/javascript">writeRandomQuote();</script>
 
 	</div>
 
