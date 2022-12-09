@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TEST PAGE</title>
+
+    <style media="screen">
+      .pattern {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url("assets/media/offlinevideo.gif");
+  background-size: cover;
+}
+
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <script type="text/javascript">
+      // create an array to store the pattern elements
+var patterns = [];
+
+// create a function to generate a new pattern element
+function createPattern() {
+  // create a new div element and give it a class of "pattern"
+  var pattern = document.createElement("div");
+  pattern.className = "pattern";
+
+  // set a random position for the pattern
+  var x = Math.random() * window.innerWidth;
+  var y = Math.random() * window.innerHeight;
+  pattern.style.left = x + "px";
+  pattern.style.top = y + "px";
+
+  // add the pattern to the array and the page
+  patterns.push(pattern);
+  document.body.appendChild(pattern);
+}
+
+// create a function to move the patterns down the page
+function movePatterns() {
+  for (var i = 0; i < patterns.length; i++) {
+    var pattern = patterns[i];
+    var y = pattern.offsetTop + 1;
+    pattern.style.top = y + "px";
+
+    // if the pattern has moved off the bottom of the page, remove it
+    if (y > window.innerHeight) {
+      pattern.parentNode.removeChild(pattern);
+      patterns.splice(i, 1);
+      i--;
+    }
+  }
+}
+
+// generate a new pattern every 50 milliseconds
+setInterval(createPattern, 50);
+
+// move the patterns every 10 milliseconds
+setInterval(movePatterns, 10);
+
+
+    </script>
+
+  </body>
+</html>
