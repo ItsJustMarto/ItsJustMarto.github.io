@@ -8,8 +8,8 @@ var raindrop = document.createElement("div");
 raindrop.className = "raindrop";
 
 // set a random position for the raindrop
-var x = Math.random() * window.innerWidth;
-var y = Math.random() * window.innerHeight;
+var x = Math.random() * window.innerWidth -1px;
+var y = Math.random() * window.innerHeight -1px;
 raindrop.style.left = x + "px";
 raindrop.style.top = y + "px";
 
