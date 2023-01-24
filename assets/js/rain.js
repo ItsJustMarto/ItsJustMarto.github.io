@@ -1,3 +1,5 @@
+//CURRENTLY BROKEN
+
 // create an array to store the raindrop elements
 var raindrops = [];
 
