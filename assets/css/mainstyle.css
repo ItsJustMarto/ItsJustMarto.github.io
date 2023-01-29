@@ -1,152 +1,86 @@
-h1 {
-    color: #E3DCD2;
-    font-family: consolas;
-    font-size: 72px;
-    text-shadow: 7px 7px 7px #202020;
-    }
+* {}
 
-h3 {
-    color: #E3DCD2;
-    font-family: consolas;
-    font-size: 21px;
-    text-shadow: 7px 7px 7px #202020;
-    }
-p {
-    font-size: 25px;
-    font-family: consolas;
+body,
+html {
+  height: 100%;
+  color: #00000;
+  line-height: 1.8;
 }
 
-body {
-    padding-left: auto;
-    padding-right: auto;
-    font-family: consolas;
-    text-align: center;
-    background-color: #013328;
-    color: #013328;
-    }
-
-a {
-    text-decoration: none;
-    font-family: consolas;
-    color: DA0037;
-    }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 2px;
+.navbar-item {
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+  text-decoration: none;
 }
 
-li {
-    float: left;
-    color: #E3DCD2;
-    }
-
-li a{
-    display: block;
-    color: #100C0D;
-    text-align: center;
-    padding: 5px 25px;
-    text-decoration: none;
-    font-size: 25px;
-    }
-
-li a:hover {
-    color: #CC8B65;
-    transform: scale(1.1);
+.button:hover {
+  font-size: 125%;
 }
 
-a { text-decoration: none; color:red; }
-a:visited { text-decoration: none; }
-a:focus { text-decoration: none; }
-
-.active {
-  color: #CA3E47;
+/* Create a Parallax Effect */
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.art {
-    box-shadow: black;
-    border-radius: 8px;
-    box-shadow:5px 5px 5px #202020;
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/assets/media/offlinevideo.gif');
+  min-height: 100%;
 }
 
-.social {
-    padding: 10px;
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/assets/media/raze.png");
+  min-height: 400px;
 }
 
-img:hover {
-    transform: scale(1.2);
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/assets/media/raze.png");
+  min-height: 400px;
 }
 
-button {
-    background-color: #CA3E47;
-    color: #414141;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px #202020;
-    font-family: consolas;
-    text-align: center;
-    width: 125px;
-    height: 75px;
-    font-size: 21px;
-}
-
-button:hover{
-    transform: scale(1.2);
-}
-
-#clock {
-  font-family: consolas, sans-serif;
-  color: #E3DCD2;
-  font-size: 56px;
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  text-shadow:5px 5px 5px #202020;
-}
-
-#spin {
-  color: yellow;
-}
-
-#spin:after {
-  content:"";
-  animation: spin 60s linear infinite;
-}
-
-.fade-in {
-  animation: fadeIn ease 5s;
-  -webkit-animation: fadeIn ease 5s;
-  -moz-animation: fadeIn ease 5s;
-  -o-animation: fadeIn ease 5s;
-  -ms-animation: fadeIn ease 5s;
-}
-
-.raindrop {
-  position: absolute;
-  width: 5px;
-  height: 7px;
+.center-heading {
+  font-style: italic;
   border-radius: 5px;
-  background-color: green;
-  opacity: 40%;
-  z-index: -1;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity:0;
+/* animation tags */
+.animate-bottom {
+  position: relative;
+  animation: animatebottom 0.5s
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0
   }
-  100% {
-    opacity:1;
+
+  to {
+    bottom: 0;
+    opacity: 1
   }
 }
 
-@keyframes spin {
-  0% { opacity: 100; content:"Hello";}
-  25% { opacity: 0;}
-  50% {opacity: 100; content: "Hola";}
-  75% {opacity: 0;}
-  100% { opacity: 100; content: "Hey";}
+/* Position Tags*/
+.display-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.center {
+  text-align: center;
 }

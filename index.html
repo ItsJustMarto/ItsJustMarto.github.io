@@ -2,60 +2,78 @@
 <html>
 
 <head>
-	<title>Marto</title>
+    <!-- Website Title in Tabs Bar-->
+    <title>Marto</title>
 
-	<link rel="icon" href="assets/icons/mug2.ico" type="image/ico" />
+    <link rel="icon" href="assets/icons/mug2.ico" type="image/ico" />
 
-	<meta charset="utf-8">
-	<meta name="Description" content="information about the page (usually two sentences)">
-	<meta name="Author" conent="Toby Martin">
-	<link rel="stylesheet" type="text/css" href="assets/css/mainstyle.css">
-	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="information about the page (usually two sentences)">
+    <meta name="Author" conent="Toby Martin">
+
+    <!-- Import css Style Sheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/mainstyle.css">
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Padyakke">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+<!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
 
 <body>
+    <!-- Navbar (sit on top) -->
+    <div class="top">
+        <div class="bar" id="navbar">
+            <a href="#home" class="navbar-item button">HOME</a>
+            <a href="#about" class="navbar-item button"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#portfolio" class="navbar-item button"><i class="fa fa-th"></i> PORTFOLIO</a>
+            <a href="#contact" class="navbar-item button"><i class="fa fa-envelope"></i> CONTACT</a>
+        </div>
+    </div>
 
-	<script type="text/javascript" src=""></script>
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1" id="home">
+        <div class="display-middle">
+            <span class="animate-bottom center-heading w3-padding-large w3-dark-grey w3-xlarge w3-wide">m a r t o</span>
+        </div>
+    </div>
 
-	<div style="padding-top: 10%;" class="fade-in">
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="center">ABOUT ME</h3>
+        <p class="center"><em>I love photography</em></p>
+        <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="w3-row">
+            <div class="w3-col m6 center w3-padding-large">
+                <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
+                <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off"
+                    alt="Photo of Me" width="500" height="333">
+            </div>
+            <!-- Hide this text on small devices -->
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
 
-		<h1><span id="spin" style="color: #CC8B65"></span>, I'm Marto!</h1>
-
-		<div id="clock"></div>
-
-		<script type="text/javascript" src="assets/js/scripts.js"></script>
-
-		<a class="social" href="https://twitch.tv/itsjustmarto"><img src="assets/media/twitch.png" height="40" width="40"></a>
-		<a class="social" href="https://discord.gg/3MUV5vU9Xx"><img src="assets/media/discord.png" height="40" width="40"></a>
-		<a class="social" href="https://www.instagram.com/itsjustmarto/"><img src="assets/media/instagram.png" height="40" width="40"></a>
-		<a class="social" href="https://twitter.com/itsjustmarto"><img src="assets/media/twitter.png" height="40" width="40"></a>
-
-		<br>
-
-		<!--
-		<h3><script type="text/javascript" src="assets/js/quotes.js">writeRandomQuote();</script></h3>
-		-->
-
-		<!-- Quote to be Displayed Here -->
-
-      <span class = "quote">
-
-        <!-- Quote Text -->
-        <h3 class = "text">
-        "Quote"
-				</h3>
-
-      </span>
-
-      <!-- Author to be Displayed Here -->
-      <h3 class = "author">
-        Author
-      </h3>
-
-			<script src="assets/js/quotesv2.js"></script>
-
-	</div>
 
 </body>
 
