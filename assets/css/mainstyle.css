@@ -1,11 +1,22 @@
-
-body,
-html {
+body, html {
   height: 100%;
   color: 0;
   line-height: 1.8;
 }
 
+p {
+  font-family: nexa;
+}
+
+h3 {
+  font-family: nexa;
+  font-weight: bolder;
+}
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 .navbar-item {
   padding: 8px 16px;
   float: left;
@@ -102,6 +113,10 @@ html {
 
 .black {
   background-color: white;
+}
+
+.gray{
+  background-color: gray;
 }
 
 .social {
