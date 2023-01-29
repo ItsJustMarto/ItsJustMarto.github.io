@@ -10,8 +10,8 @@ function createRaindrop() {
   raindrop.className = "raindrop";
 
   // set a random position for the raindrop
-  var x = Math.random() * window.innerWidth -1px;
-  var y = Math.random() * window.innerHeight -1px;
+  var x = Math.random() * window.innerWidth -1;
+  var y = Math.random() * window.innerHeight -1;
   raindrop.style.left = x + "px";
   raindrop.style.top = y + "px";
 
@@ -28,7 +28,7 @@ function moveRaindrops() {
     raindrop.style.top = y + "px";
 
     // if the raindrop has moved off the bottom of the page, remove it
-    if (y > window.innerHeight - 1px) {
+    if (y > window.innerHeight - 1) {
       raindrop.parentNode.removeChild(raindrop);
       raindrops.splice(i, 1);
       i--;
