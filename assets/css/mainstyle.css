@@ -1,9 +1,8 @@
-* {}
 
 body,
 html {
   height: 100%;
-  color: #00000;
+  color: 0;
   line-height: 1.8;
 }
 
@@ -17,8 +16,13 @@ html {
   text-decoration: none;
 }
 
+.button{
+  text-decoration: none;
+}
+
 .button:hover {
   font-size: 125%;
+  size: 125%;
 }
 
 /* Create a Parallax Effect */
@@ -83,4 +87,36 @@ html {
 
 .center {
   text-align: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.rounded {
+  border-radius: 5px; 
+}
+
+/* Colours */
+
+.black {
+  background-color: white;
+}
+
+.social {
+  width: 20px;
+  height:auto;
+}
+
+.social:hover{
+  width: 30px;
+  height: auto;
+}
+
+.border-black{
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
 }

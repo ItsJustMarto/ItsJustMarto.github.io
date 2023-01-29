@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Padyakke">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/f0eb2d98f3.css" crossorigin="anonymous">
 
 </head>
 <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
@@ -37,14 +37,14 @@
     <!-- First Parallax Image with Logo Text -->
     <div class="bgimg-1" id="home">
         <div class="display-middle">
-            <span class="animate-bottom center-heading w3-padding-large w3-dark-grey w3-xlarge w3-wide">m a r t o</span>
+            <span class="animate-bottom center-heading w3-padding-large border-black w3-xlarge w3-wide">m a r t o</span>
         </div>
     </div>
 
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
         <h3 class="center">ABOUT ME</h3>
-        <p class="center"><em>I love photography</em></p>
+        <p class="center"><em>I love games and media</em></p>
         <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam,
@@ -55,14 +55,14 @@
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
             laboris nisi ut aliquip ex ea commodo consequat.</p>
         <div class="w3-row">
-            <div class="w3-col m6 center w3-padding-large">
-                <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-                <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off"
-                    alt="Photo of Me" width="500" height="333">
+            <div class="w3-col m6 center">
+                <p><b><i class="fa fa-user"></i> @ItsJustMarto</b></p><br>
+                <img src="/assets/media/mug.png" class="image rounded" width="500" height="500">
             </div>
             <!-- Hide this text on small devices -->
-            <div class="w3-col m6 w3-hide-small w3-padding-large">
-                <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            <div class="w3-col m6 w3-padding-large">
+                <p><br><br>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                     nisi ut aliquip ex ea commodo consequat. Duis aute irure
                     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
@@ -74,7 +74,123 @@
         </div>
     </div>
 
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center">MY WORK</h3>
+        <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make
+                them bigger</em></p><br>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img src="/assets/media/500x500-head.png" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
+                    class="w3-hover-opacity" alt="Old Marto Head">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/assets/media/mug.png" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Marto mug render by @noon">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/assets/media/offlinevideo.gif" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
+                    class="w3-hover-opacity" alt="offline video">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/assets/media/pixel_mug.PNG" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
+                    class="w3-hover-opacity" alt="pixel mug">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+                <img src="/assets/media/brb.png" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="The mist">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/assets/media/raze.png" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Raze">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/assets/media/sage.png" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)" class="w3-hover-opacity"
+                    alt="Sage">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/assets/media/fist-112.png" style="width:100%" onclick="onClick(this)"
+                    class="w3-hover-opacity" alt="Fist">
+            </div>
+            <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+        </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-large"></p>
+        </div>
+    </div>
+
 
 </body>
+
+<!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+<!-- Footer -->
+<footer class="center black w3-padding-64">
+    <a href="#home" class="button border-black"><i class="fa-solid fa-arrow-up"></i>To the top</a>
+    <div class="w3-xlarge">
+        <a href="https://twitch.tv/itsjustmarto"><img src="/assets/media/twitch.png" class="social"></a>
+        <a href="https://discord.gg/3MUV5vU9Xx"><img src="/assets/media/discord.png" class="social"></a>
+        <a href="https://www.instagram.com/itsjustmarto/"><img src="/assets/media/instagram.png" class="social"></a>
+        <a href="https://twitter.com/itsjustmarto"><img src="/assets/media/twitter.png" class="social"></a>
+        <a href="https://www.youtube.com/channel/UCJ2uGXvETNVUO6ioOuHT5xA"><img src="/assets/media/youtube.png"
+                class="social"></a>
+    </div>
+</footer>
+
+<!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+<script>
+    // Modal Image Gallery
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function () { myFunction() };
+    function myFunction() {
+        var navbar = document.getElementById("navbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
 
 </html>
