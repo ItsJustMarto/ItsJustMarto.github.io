@@ -16,6 +16,7 @@ h3 {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 .navbar-item {
   padding: 8px 16px;
@@ -60,7 +61,7 @@ h3 {
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("/assets/media/raze.png");
+  background-image: url("/assets/media/sage.png");
   min-height: 400px;
 }
 
@@ -134,4 +135,12 @@ h3 {
   color: white;
   border-radius: 5px;
   padding: 5px;
+}
+
+.portfolio-image:hover{
+  transform: scale(1.05);
+}
+
+.opacity-min {
+  opacity: 0.75
 }

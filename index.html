@@ -26,16 +26,16 @@
 <body>
     <!-- Navbar (sit on top) -->
     <div class="top navbar" id="home">
-        <div class="bar" id="navbar">
+        <div class="bar" id="navbar" ">
             <a href="#home" class="navbar-item button">HOME</a>
-            <a href="#about" class="navbar-item button"><i class="fa fa-user"></i> ABOUT</a>
-            <a href="#portfolio" class="navbar-item button"><i class="fa fa-th"></i> PORTFOLIO</a>
-            <a href="#contact" class="navbar-item button"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="#about" class="navbar-item button">ABOUT</a>
+            <a href="#media" class="navbar-item button">PORTFOLIO</a>
+            <a href="#contact" class="navbar-item button">CONTACT</a>
         </div>
     </div>
 
     <!-- First Parallax Image with Logo Text -->
-    <div class="bgimg-1">
+    <div class="bgimg-1 opacity-min">
         <div class="display-middle">
             <span class="animate-bottom center-heading w3-padding-large border-black w3-xlarge w3-wide">m a r t o</span>
         </div>
@@ -74,15 +74,15 @@
         </div>
     </div>
 
-    <!-- Second Parallax Image with Portfolio Text -->
-    <div class="bgimg-2 w3-display-container w3-opacity-min">
+    <!-- Second Parallax Image with Media Text -->
+    <div class="bgimg-2 w3-display-container opacity-min">
         <div class="w3-display-middle">
-            <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+            <span class="w3-xxlarge w3-text-white w3-wide">MEDIA</span>
         </div>
     </div>
 
-    <!-- Container (Portfolio Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <!-- Container (Media Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="media">
         <h3 class="w3-center">MY WORK</h3>
         <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make
                 them bigger</em></p><br>
@@ -91,44 +91,44 @@
         <div class="w3-row-padding w3-center">
             <div class="w3-col m3">
                 <img src="/assets/media/500x500-head.png" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Old Marto Head">
+                    class="portfolio-image" alt="Old Marto Head">
             </div>
 
             <div class="w3-col m3">
                 <img src="/assets/media/mug.png" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Marto mug render by @noon">
+                    class="portfolio-image" alt="Marto mug render by @noon">
             </div>
 
             <div class="w3-col m3">
                 <img src="/assets/media/offlinevideo.gif" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="offline video">
+                    class="portfolio-image" alt="offline video">
             </div>
 
             <div class="w3-col m3">
                 <img src="/assets/media/pixel_mug.PNG" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="pixel mug">
+                    class="portfolio-image" alt="pixel mug">
             </div>
         </div>
 
         <div class="w3-row-padding w3-center w3-section">
             <div class="w3-col m3">
                 <img src="/assets/media/brb.png" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="The mist">
+                    class="portfolio-image" alt="The mist">
             </div>
 
             <div class="w3-col m3">
                 <img src="/assets/media/raze.png" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Raze">
+                    class="portfolio-image" alt="Raze">
             </div>
 
             <div class="w3-col m3">
                 <img src="/assets/media/sage.png" style="width:100%; aspect-ratio: 1/1;" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Sage">
+                    class="portfolio-image" alt="Sage">
             </div>
 
             <div class="w3-col m3">
                 <img src="/assets/media/fist-112.png" style="width:100%" onclick="onClick(this)"
-                    class="w3-hover-opacity" alt="Fist">
+                    class="portfolio-image" alt="Fist">
             </div>
         </div>
     </div>
@@ -196,17 +196,6 @@
         document.getElementById("modal01").style.display = "block";
         var captionText = document.getElementById("caption");
         captionText.innerHTML = element.alt;
-    }
-
-    // Change style of navbar on scroll
-    window.onscroll = function () { myFunction() };
-    function myFunction() {
-        var navbar = document.getElementById("navbar");
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " gray";
-        } else {
-            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-        }
     }
 </script>
 
