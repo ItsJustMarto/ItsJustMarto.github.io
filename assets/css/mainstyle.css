@@ -2,14 +2,15 @@ body, html {
   height: 100%;
   color: 0;
   line-height: 1.8;
+  font-family: monospace;
 }
 
 p {
-  font-family: nexa;
+  font-family: monospace;
 }
 
 h3 {
-  font-family: nexa;
+  font-family: monospace;
   font-weight: bolder;
 }
 .navbar{
@@ -26,6 +27,7 @@ h3 {
   display: block;
   outline: 0;
   text-decoration: none;
+  font-family: monospace;
 }
 
 .button{
@@ -73,7 +75,7 @@ h3 {
 /* animation tags */
 .animate-bottom {
   position: relative;
-  animation: animatebottom 0.5s
+  animation: animatebottom 1.0s
 }
 
 @keyframes animatebottom {
