@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   height: 100%;
   color: 0;
   line-height: 1.8;
@@ -13,12 +14,24 @@ h3 {
   font-family: monospace;
   font-weight: bolder;
 }
-.navbar{
+
+.navbar {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
 }
+
+.nav-coloured {
+  background-color: #E7E7E9 !important;
+  transition: background-color 100ms linear;
+}
+
+.nav-transparent {
+  background-color: transparent !important;
+  transition: background-color 100ms linear;
+}
+
 .navbar-item {
   padding: 8px 16px;
   float: left;
@@ -30,7 +43,7 @@ h3 {
   font-family: monospace;
 }
 
-.button{
+.button {
   text-decoration: none;
 }
 
@@ -39,32 +52,57 @@ h3 {
   size: 125%;
 }
 
-/* Create a Parallax Effect */
-.bgimg-1,
-.bgimg-2,
-.bgimg-3 {
+.bg-1 {
+  background-image:
+    linear-gradient(to top right,
+      hsl(330, 100%, 45.1%) 0%,
+      hsl(331, 89.25%, 47.36%) 8.1%,
+      hsl(330.53, 79.69%, 48.96%) 15.5%,
+      hsl(328.56, 70.89%, 49.96%) 22.5%,
+      hsl(324.94, 63.52%, 50.4%) 29%,
+      hsl(319.21, 54.99%, 50.3%) 35.3%,
+      hsl(310.39, 46.14%, 49.68%) 41.2%,
+      hsl(296.53, 39.12%, 49.7%) 47.1%,
+      hsl(280.63, 42.91%, 53.43%) 52.9%,
+      hsl(265.14, 47.59%, 56.84%) 58.8%,
+      hsl(250.13, 52.52%, 59.88%) 64.7%,
+      hsl(235.88, 59.2%, 60.91%) 71%,
+      hsl(225.81, 68.23%, 57.85%) 77.5%,
+      hsl(218.93, 74.97%, 54.21%) 84.5%,
+      hsl(213.89, 79.63%, 49.97%) 91.9%,
+      hsl(210, 100%, 45.1%) 100%);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('/assets/media/offlinevideo.gif');
   min-height: 100%;
 }
 
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("/assets/media/raze.png");
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("/assets/media/sage.png");
-  min-height: 400px;
+.bg-2,
+.bg-3 {
+  background-image:
+    linear-gradient(to top right,
+      hsl(330, 100%, 45.1%) 0%,
+      hsl(331, 89.25%, 47.36%) 8.1%,
+      hsl(330.53, 79.69%, 48.96%) 15.5%,
+      hsl(328.56, 70.89%, 49.96%) 22.5%,
+      hsl(324.94, 63.52%, 50.4%) 29%,
+      hsl(319.21, 54.99%, 50.3%) 35.3%,
+      hsl(310.39, 46.14%, 49.68%) 41.2%,
+      hsl(296.53, 39.12%, 49.7%) 47.1%,
+      hsl(280.63, 42.91%, 53.43%) 52.9%,
+      hsl(265.14, 47.59%, 56.84%) 58.8%,
+      hsl(250.13, 52.52%, 59.88%) 64.7%,
+      hsl(235.88, 59.2%, 60.91%) 71%,
+      hsl(225.81, 68.23%, 57.85%) 77.5%,
+      hsl(218.93, 74.97%, 54.21%) 84.5%,
+      hsl(213.89, 79.63%, 49.97%) 91.9%,
+      hsl(210, 100%, 45.1%) 100%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50%;
 }
 
 .center-heading {
@@ -127,40 +165,55 @@ h3 {
 }
 
 .rounded {
-  border-radius: 5px; 
+  border-radius: 5px;
 }
 
 /* Colours */
 
 .black {
-  background-color: white;
+  background-color: #E7E7E9;
 }
 
-.gray{
+.gray {
   background-color: gray;
 }
 
 .social {
   width: 20px;
-  height:auto;
+  height: auto;
 }
 
-.social:hover{
+.social:hover {
   width: 30px;
   height: auto;
 }
 
-.border-black{
+.border-black {
   background-color: black;
   color: white;
   border-radius: 5px;
   padding: 5px;
 }
 
-.portfolio-image:hover{
+.portfolio-image:hover {
   transform: scale(1.05);
 }
 
 .opacity-min {
   opacity: 0.75
+}
+
+#carousel {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space:nowrap;
+}
+
+#carousel .slide {
+  display: inline-block;
+  width: 100%;
 }

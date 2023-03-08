@@ -25,9 +25,9 @@
 
 <body>
     <!-- Navbar (sit on top) -->
-    <div class="top navbar">
-        <div class="bar" id="navbar" ">
-            <a href="#home" class="navbar-item button">HOME</a>
+    <div class="top navbar" id="navbar2">
+        <div class="bar" id="navbar">
+            <a href=" #home" class="navbar-item button">HOME</a>
             <a href="#about" class="navbar-item button">ABOUT</a>
             <a href="#media" class="navbar-item button">PORTFOLIO</a>
             <a href="#contact" class="navbar-item button">CONTACT</a>
@@ -35,7 +35,7 @@
     </div>
 
     <!-- First Parallax Image with Logo Text -->
-    <div class="bgimg-1 opacity-min" id="home">
+    <div class="bg-1 opacity-min" id="home">
         <div class="display-middle">
             <span class="animate-bottom center-heading w3-padding-large border-black w3-xlarge w3-wide">m a r t o</span>
         </div>
@@ -75,7 +75,7 @@
     </div>
 
     <!-- Second Parallax Image with Media Text -->
-    <div class="bgimg-2 w3-display-container opacity-min">
+    <div class="bg-2 w3-display-container opacity-min">
         <div class="w3-display-middle">
             <span class="w3-xxlarge w3-text-white w3-wide">MEDIA</span>
         </div>
@@ -127,8 +127,8 @@
             </div>
 
             <div class="w3-col m3">
-                <img src="/assets/media/fist-112.png" style="width:100%" onclick="onClick(this)"
-                    class="portfolio-image" alt="Fist">
+                <img src="/assets/media/fist-112.png" style="width:100%" onclick="onClick(this)" class="portfolio-image"
+                    alt="Fist">
             </div>
         </div>
     </div>
@@ -141,8 +141,29 @@
         </div>
     </div>
 
+    <div id="carousel">
+        <div class="slide">
+            <img src="http://placehold.it/300x150"/>
+        </div>
+        <div class="slide">
+            <img src="http://placehold.it/300x150"/>
+        </div>
+        <div class="slide">
+            <img src="http://placehold.it/300x150"/>
+        </div>
+        <div class="slide">
+            <img src="http://placehold.it/300x150"/>
+        </div>
+        <div class="slide">
+            <img src="http://placehold.it/300x150"/>
+        </div>
+        <div class="slide">
+            <img src="http://placehold.it/300x150"/>
+        </div>
+    </div>
+
     <!-- Third Parallax Image with Portfolio Text -->
-    <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="bg-3 w3-display-container w3-opacity-min">
         <div class="w3-display-middle">
             <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
         </div>
@@ -197,6 +218,19 @@
         var captionText = document.getElementById("caption");
         captionText.innerHTML = element.alt;
     }
+
+    var myNav = document.getElementById('navbar2');
+    window.onscroll = function () {
+        if (document.body.scrollTop >= screen.height - 200 || document.documentElement.scrollTop >= screen.height - 200 ) {
+           myNav.classList.add("nav-coloured");
+            myNav.classList.remove("nav-transparent");
+        }
+        else {
+            myNav.classList.add("nav-transparent");
+            myNav.classList.remove("nav-coloured");
+        }
+    };
+
 </script>
 
 </html>
