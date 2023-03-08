@@ -45,7 +45,7 @@ h3 {
 }
 
 .navbar-item-left {
-  padding: 8px 16px;
+  padding: 5px 16px;
   float: left;
   width: auto;
   border: none;
@@ -64,6 +64,13 @@ h3 {
   outline: 0;
   text-decoration: none;
   font-family: Didot;
+}
+
+img.rounded {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
 }
 
 .button {
