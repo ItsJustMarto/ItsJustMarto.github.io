@@ -277,7 +277,12 @@ img.rounded {
 
 /* --------------------FOOTER--------------------------- */
 
+.footer-element {
+  font-size: smaller;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
 .footer-element:hover {
-  font-size: 110%;
-  transition: font-size 100ms linear;
+  font-size: 100.25%;
+  transition: font-size 50ms linear;
 }
