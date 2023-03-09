@@ -21,10 +21,12 @@ p {
   font-family: Didot;
 }
 
-h3 {
+h1, h2, h3 {
   font-family: Didot;
   font-weight: bolder;
 }
+
+/* -------------------NAVBAR-------------------------- */
 
 .navbar {
   position: fixed;
@@ -52,7 +54,7 @@ h3 {
   display: block;
   outline: 0;
   text-decoration: none;
-  font-family: Didot;
+  font-family: "Lucida Console", "Courier New", monospace;;
 }
 
 .navbar-item-right {
@@ -63,7 +65,18 @@ h3 {
   display: block;
   outline: 0;
   text-decoration: none;
-  font-family: Didot;
+  font-family: "Lucida Console", "Courier New", monospace;;
+}
+
+.navbar-item-centre {
+  padding: 8px 16px;
+float: right;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+  text-decoration: none;
+  font-family: "Lucida Console", "Courier New", monospace;;
 }
 
 img.rounded {
@@ -77,10 +90,27 @@ img.rounded {
   text-decoration: none;
 }
 
+.nav-button {
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: background-color 300ms ease-in;
+}
+
 .button:hover {
   font-size: 125%;
-  size: 125%;
+  scale: 1.2;
 }
+
+.nav-button:hover {
+  background-color: #000;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 300ms ease-in;
+  scale: 1.2;
+}
+
+/* --------------------------------------------------------- */
 
 .bg-1 {
   background-image:
