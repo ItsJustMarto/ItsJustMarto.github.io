@@ -29,12 +29,12 @@
 <body class="example">
     <!-- Navbar (sit on top) -->
     <div class="top navbar" id="navbar2">
-        <div class="bar" id="navbar">
-            <a href=" #home" class="navbar-item-left button"><img src="/assets/media/mug.png" class="rounded"></a>
+        <div class="bar opacity-min" id="navbar">
+            <a href=" #home" class="navbar-item-left button "><img src="/assets/media/mug.png" class="rounded"></a>
 
-            <a href="#contact" class="navbar-item-right nav-button">CONTACT</a>
-            <a href="#media" class="navbar-item-right nav-button">PORTFOLIO</a>
-            <a href="#about" class="navbar-item-right nav-button">ABOUT</a>
+            <a href="#contact" class="navbar-item-right nav-button opacity-min">CONTACT</a>
+            <a href="#media" class="navbar-item-right nav-button opacity-min">PORTFOLIO</a>
+            <a href="#about" class="navbar-item-right nav-button opacity-min">ABOUT</a>
             
         </div>
     </div>
@@ -212,9 +212,10 @@
         captionText.innerHTML = element.alt;
     }
 
+    // Add solid background to Navbar on scroll
     var myNav = document.getElementById('navbar2');
     window.onscroll = function () {
-        if (document.body.scrollTop >= screen.height - 200 || document.documentElement.scrollTop >= screen.height - 200 ) {
+        if (document.body.scrollTop >= screen.height|| document.documentElement.scrollTop >= screen.height) {
            myNav.classList.add("nav-coloured");
             myNav.classList.remove("nav-transparent");
         }
