@@ -1,3 +1,7 @@
+div:hover {
+  visibility: hidden;
+}
+
 body,
 html {
   height: 100%;
@@ -305,7 +309,7 @@ img.rounded {
   border: none;
   outline: none;
   box-shadow: black 3px 3px 10px;
-  cursor: pointer;
+  cursor: pgit ointer;
 }
 
 .cookie-button:active{
