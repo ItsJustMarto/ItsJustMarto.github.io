@@ -284,6 +284,7 @@ img.rounded {
   max-width: 360px;
   padding: 25px 25px 30px 25px;
   text-align: center;
+  box-shadow: black 3px 3px 10px;
 }
 
 .cookie-wrapper p{
