@@ -192,7 +192,7 @@
         <h2>Cookie Consent</h2>
         <p>This website uses cookies to ensure an optimal user experience</p>
         <div class="cookie-interact">
-        <button class="cookie-button">I Understand</button>
+        <button onclick="cookiePress()" class="cookie-button">I Understand</button>
         <a class="cookie-a" href="https://www.termsfeed.com/live/080ad019-0f83-4479-b411-a88f5db06ea5">Learn More</a>
         </div>
     </div>
@@ -240,12 +240,11 @@
     };
 
     // Cookie Preferences Notification
-    const acceptBtn = document.getElementById('cookie-button');
 
-    acceptBtn.onClick = ()=>{
+    function cookiePress() {
         console.log("Button Pressed Successfully!");
     }
-    
+
     console.log("test");
 
 </script>
