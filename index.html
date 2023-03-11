@@ -16,10 +16,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/mainstyle.css" />
     <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Padyakke" />
-    <link rel="stylesheet" href="https://kit.fontawesome.com/f0eb2d98f3.css" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
 
@@ -46,7 +43,7 @@
     <div class="bg-1 opacity-min" id="home">
         <div class="display-middle">
             <span class="animate-bottom center-heading w3-padding-large border-black w3-xlarge w3-wide"
-                style="font-family: monospace;">m a r t o</span>
+                style="font-family: monospace; border-radius: 1000px; white-space: nowrap;">m a r t o</span>
         </div>
     </div>
 
@@ -141,7 +138,7 @@
         </div>
     </div>
 
-    <!-- Modal for full size images on click-->
+    <!-- Full size images on click-->
     <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
         <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
             <img id="img01" class="w3-image">
@@ -163,7 +160,7 @@
 
         <div class="center">
             <img src="assets/media/blue-m.png" class="bg-1"
-                style="scale: 0.5; width:25%; border-radius: 1000px; border: 2px solid black;">
+                style="scale: 0.5; max-width: 200px; border-radius: 1000px; border: 2px solid black;">
         </div>
         <div class="center" style="padding-top: 2.5%;">
             <div class="w3-large w3-margin-bottom">
@@ -191,6 +188,15 @@
     </div>
 
 
+    <div class="cookie-wrapper">
+        <h2>Cookie Consent</h2>
+        <p>This website uses cookies to ensure an optimal user experience</p>
+        <div class="cookie-interact">
+        <button>I Understand</button>
+        <a href="">Learn More</a>
+        </div>
+    </div>
+
 </body>
 
 <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
@@ -199,7 +205,7 @@
 <footer class="center white" style="padding-bottom: 0.5%;">
 
 
-    <div class="" >
+    <div class="">
         <a href="#home" class="footer-element" style="text-decoration: none;">Marto © 2023</a>
         <a href="#home" class="footer-element" style="text-decoration: none; padding-left: 50px">Privacy & Legal</a>
         <a href="#about" class="footer-element" style="text-decoration: none; padding-left: 50px">About</a>
@@ -232,6 +238,16 @@
             myNav.classList.remove("nav-coloured");
         }
     };
+
+    // Cookie Preferences Notification
+    const cookieBox = document.querySelector(".cookie-wrapper"), 
+    acceptBtn = cookieBox.querySelector(".cookie-interact button");
+
+    acceptBtn.onClick = ()=>{
+        console.log("Button Pressed Successfully!");
+    }
+
+    console.log("test");
 
 </script>
 
