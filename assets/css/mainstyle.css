@@ -276,7 +276,7 @@ img.rounded {
 
 /* --------------------COOKIE NOTIFICATION------------------------ */
 .cookie-wrapper {
-  position: absolute;
+  position: fixed;
   top: 65%;
   left: 25px;
   background-color: white;
@@ -305,7 +305,7 @@ img.rounded {
   border: none;
   outline: none;
   box-shadow: black 3px 3px 10px;
-  cursor: pgit ointer;
+  cursor: pointer;
 }
 
 .cookie-button:active{
