@@ -296,7 +296,7 @@ img.rounded {
   justify-content: center;
 }
 
-.cookie-interact button{
+.cookie-button{
   border-radius: 5px;
   background-color: #858585;
   padding: 10px 15px;
@@ -308,11 +308,11 @@ img.rounded {
   cursor: pointer;
 }
 
-.cookie-interact button:active{
+.cookie-button:active{
   box-shadow: none;
 }
 
-.cookie-interact a{
+.cookie-a{
   margin: 0 10px;
 }
 
