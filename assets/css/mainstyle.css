@@ -1,7 +1,3 @@
-div:hover {
-  visibility: hidden;
-}
-
 body,
 html {
   height: 100%;
@@ -319,9 +315,6 @@ img.rounded {
 .cookie-a{
   margin: 0 10px;
 }
-
-
-
 
 /* --------------------FOOTER--------------------------- */
 
