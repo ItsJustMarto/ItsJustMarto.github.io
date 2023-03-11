@@ -276,7 +276,7 @@ img.rounded {
 
 /* --------------------COOKIE NOTIFICATION------------------------ */
 .cookie-wrapper {
-  position: fixed;
+  position: absolute;
   top: 65%;
   left: 25px;
   background-color: white;
@@ -294,7 +294,6 @@ img.rounded {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .cookie-interact button{
