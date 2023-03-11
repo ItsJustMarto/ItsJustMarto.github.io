@@ -251,6 +251,10 @@ img.rounded {
   background-color: gray;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .social {
   width: 20px;
   height: auto;

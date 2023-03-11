@@ -188,7 +188,7 @@
     </div>
 
 
-    <div class="cookie-wrapper">
+    <div class="cookie-wrapper" id="cookieWrapper">
         <h2>Cookie Consent</h2>
         <p>This website uses cookies to ensure an optimal user experience</p>
         <div class="cookie-interact">
@@ -241,12 +241,12 @@
 
     // Cookie Preferences Notification
 
-    function cookiePress() {
-        console.log("Button Pressed Successfully!"); 
-        document.getElementById('cookie-wrapper').classList.add("nav-transparent");
-    }
+    var cookieWrapper = document.getElementById('cookieWrapper')
 
-    console.log("test");
+    function cookiePress() {
+        console.log("cookies understood"); 
+        cookieWrapper.classList.add("hidden");
+    }
 
 </script>
 
