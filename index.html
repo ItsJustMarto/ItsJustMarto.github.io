@@ -49,6 +49,7 @@
 
     <!-- Container (About Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
+        <div class="hidden-scroll">
         <h3 class="center">ABOUT ME</h3>
         <p class="center"><em>Sample placeholder text</em></p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -59,7 +60,8 @@
             qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
             laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <div class="w3-row">
+        </div>
+        <div class="w3-row hidden-scroll">
             <div class="w3-col m6 center">
                 <p><b><i class="fa fa-user"></i> @ItsJustMarto</b></p><br>
                 <img src="/assets/media/mug.png" class="image" width="500" height="500">
@@ -82,12 +84,12 @@
     <!-- Second Parallax Image with Media Text -->
     <div class="bg-2 w3-display-container opacity-min">
         <div class="w3-display-middle">
-            <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+            <span class="w3-xxlarge w3-text-white w3-wide hidden-scroll">PORTFOLIO</span>
         </div>
     </div>
 
     <!-- Container (Media Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="media">
+    <div class="w3-content w3-container w3-padding-64 hidden-scroll" id="media">
         <h3 class="w3-center">MY WORK</h3>
         <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make
                 them bigger</em></p><br>
@@ -146,15 +148,15 @@
         </div>
     </div>
 
-    <!-- Third Parallax Image with Portfolio Text -->
+    <!-- Third Parallax Image with CONTACT -->
     <div class="bg-3 w3-display-container w3-opacity-min">
         <div class="w3-display-middle">
-            <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+            <span class="w3-xxlarge w3-text-white w3-wide hidden-scroll">CONTACT</span>
         </div>
     </div>
 
     <!-- Container (Contact Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="contact">
+    <div class="w3-content w3-container w3-padding-64 hidden-scroll" id="contact">
         <h3 class="w3-center">Get In Touch</h3>
         <p class="w3-center"><em>I'd love to hear from you!</em></p>
 
@@ -249,6 +251,23 @@
         console.log("cookies understood"); 
         cookieWrapper.classList.add("hidden");
     }
+
+    //reveal on scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry)
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show-scroll');
+            } else {
+                entry.target.classList.remove('show-scroll');
+            }
+        });
+    });
+    
+    const hiddenElements = document.querySelectorAll('.hidden-scroll');
+    hiddenElements.forEach((el) => observer.observe(el));
+     
+
 
 </script>
 

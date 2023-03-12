@@ -323,6 +323,22 @@ img.rounded {
   margin: 0 10px;
 }
 
+/* --------------------REVEAL ON SCROLL--------------------------- */
+
+.hidden-scroll {
+ opacity: 0;
+ filter: blur(5px);
+ transform: translateX(-100%);
+ transition: all .75s ease-in-out;
+}
+
+.show-scroll {
+ opacity: 1;
+ filter: blur(0);
+ transform: translateX(0%);
+ transition: all .75 ease-in-out;
+}
+
 /* --------------------FOOTER--------------------------- */
 
 .footer-element {
