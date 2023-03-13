@@ -283,7 +283,7 @@ img.rounded {
 /* --------------------COOKIE NOTIFICATION------------------------ */
 .cookie-wrapper {
   position: fixed;
-  top: 65%;
+  bottom: 25px;
   left: 25px;
   background-color: white;
   border-radius: 15px;
