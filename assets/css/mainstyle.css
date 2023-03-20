@@ -249,6 +249,10 @@ img.rounded {
   background-color: #E7E7E9;
 }
 
+.white {
+  background-color: white;
+}
+ 
 .gray {
   background-color: gray;
 }
