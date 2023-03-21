@@ -354,3 +354,15 @@ img.rounded {
   font-size: 100.25%;
   transition: font-size 50ms linear;
 }
+
+/* --------------------DnD--------------------------- */
+.item-gain {
+  color: red;
+  padding: 50px;
+  font-style: italic;
+}
+
+.dndhpl {
+  font-style: italic;
+  color: green;
+}
